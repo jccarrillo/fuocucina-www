@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>fuocucina. fire-kitchen.</title>
+<meta name="description" content="fuocucina (fwoh · koo · chee · nah). fire-kitchen. built for the long table. coming soon.">
+<meta property="og:title" content="fuocucina. fire-kitchen.">
+<meta property="og:description" content="come hungry. stay late. coming soon.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fuocucina.com/">
+<meta property="og:image" content="https://fuocucina.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#EDE6D8">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Hanken+Grotesk:wght@300;400;500&display=swap">
+<style>
+  :root{
+    --bone:#EDE6D8; --bone-raised:#F3EDE0; --carbone:#221E1A; --oliva:#4F5240; --noce:#5F452B;
+    --ottone:#A78D5F; --fumo:#8A8378; --brace:#B24A26; --hairline:#D2C8B2;
+    --display:"Marcellus",Georgia,"Times New Roman",serif;
+    --body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bone);color:var(--carbone)}
+  body{font-family:var(--body);font-weight:300;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  header{padding:96px 0 64px;text-align:center}
+  .wm{font-family:var(--display);font-weight:400;line-height:1;letter-spacing:.02em;white-space:nowrap;display:inline-block;font-size:clamp(46px,11vw,124px);margin:.28em 0 0;max-width:100%}
+  .ie{position:relative;display:inline-block}
+  .ie .fl{position:absolute;left:50%;transform:translateX(-50%);top:-.34em;width:.15em;height:.21em;display:block}
+  .pron{margin-top:22px;font-weight:500;font-size:clamp(11px,1.6vw,13px);letter-spacing:.42em;text-transform:uppercase;color:var(--fumo);padding-left:.42em}
+  .rule{width:120px;height:1px;background:var(--ottone);margin:34px auto 30px}
+  .tag{font-family:var(--display);font-size:clamp(24px,3.6vw,34px);line-height:1.2}
+  .tag .dot{color:var(--brace)}
+  .eyebrow{font-weight:500;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--fumo);padding-left:.3em}
+  section{padding:56px 0;border-top:1px solid var(--hairline)}
+  .story{max-width:600px;margin:0 auto;text-align:center;color:#57504A}
+  .story p{margin:0 0 1.1em}
+  .story p.lead{font-family:var(--display);font-size:21px;color:var(--carbone);line-height:1.45}
+  h2{font-family:var(--display);font-weight:400;font-size:clamp(24px,3.4vw,32px);margin:14px 0 8px;text-align:center}
+  .sub{text-align:center;color:#57504A;max-width:520px;margin:0 auto 36px}
+  .pieces{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+  .piece{background:var(--bone-raised);border:1px solid var(--hairline);border-radius:3px;padding:26px 24px;display:flex;flex-direction:column;gap:10px}
+  .piece .mat{height:6px;border-radius:2px;width:44px}
+  .piece h3{font-family:var(--display);font-weight:400;font-size:22px;margin:6px 0 0;line-height:1.15}
+  .piece .what{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fumo);font-weight:500}
+  .piece p{margin:0;font-size:15px;color:#57504A}
+  .promise{margin-top:32px;text-align:center;font-family:var(--display);font-size:19px}
+  .promise .dot{color:var(--brace)}
+  .promise small{display:block;margin-top:6px;font-family:var(--body);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--fumo)}
+  .notify{text-align:center}
+  form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;max-width:520px;margin:22px auto 0}
+  input[type=email]{flex:1 1 260px;font-family:var(--body);font-size:16px;padding:13px 16px;border:1px solid var(--hairline);border-radius:3px;background:var(--bone-raised);color:var(--carbone);outline:none}
+  input[type=email]:focus{border-color:var(--ottone)}
+  button{font-family:var(--display);font-size:17px;padding:12px 22px;border:1px solid var(--carbone);border-radius:3px;background:var(--carbone);color:var(--bone);cursor:pointer}
+  button:hover{background:#3A342E}
+  .fine{margin-top:12px;font-size:12.5px;color:var(--fumo)}
+  footer{border-top:1px solid var(--hairline);padding:44px 24px 56px;text-align:center}
+  footer nav{display:flex;gap:28px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
+  footer nav a{font-family:var(--display);font-size:17px;color:var(--carbone);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:3px}
+  footer nav a:hover,footer nav a:focus-visible{border-bottom-color:var(--ottone);outline:none}
+  footer nav a span{color:var(--fumo);font-family:var(--body);font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-left:7px;vertical-align:2px}
+  footer .fn{color:var(--fumo);font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-top:12px}
+  @media (prefers-reduced-motion:no-preference){
+    .fl{animation:glow 4.5s ease-in-out infinite}
+    @keyframes glow{0%,100%{opacity:1}50%{opacity:.62}}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1 class="wm" aria-label="fuocucina">fuocuc<span class="ie">&#305;<svg class="fl" viewBox="0 0 100 112" aria-hidden="true"><g transform="translate(1.5,0)"><path d="M54 6 C60 26 76 40 75 64 C74 90 60 106 47 106 C31 106 21 90 23 70 C25 52 36 40 44 26 C48 18 51 12 54 6 Z" fill="#B24A26"/></g></svg></span>na</h1>
+    <div class="pron">fwoh · koo · chee · nah</div>
+    <div class="rule"></div>
+    <div class="tag">come hungry<span class="dot">.</span> stay late<span class="dot">.</span></div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap story">
+    <p class="lead">fuocucina means fire-kitchen. <em>fuoco</em>, <em>cucina</em>. but really it means what happens around one.</p>
+    <p>in italy there's a word for it: <em>tavolata</em>. the long table. the dinner that starts at golden hour and ends when someone finally finds their shoes. nobody plans a tavolata. somebody just lights a fire, and everyone ends up in that backyard.</p>
+    <p>you know the backyard. it might be yours.</p>
+  </div>
+</section>
+
+<section class="notify">
+  <div class="wrap">
+    <div class="eyebrow">coming soon</div>
+    <h2>tell me when</h2>
+    <p class="sub" style="margin-bottom:0">one note when the table is set. nothing else, ever.</p>
+    <form action="https://app.kit.com/forms/9966056/subscriptions" method="POST">
+      <input type="email" name="email_address" placeholder="your email" required autocomplete="email" aria-label="email address">
+      <button type="submit">tell me when</button>
+    </form>
+    <p class="fine">no list-selling, no weekly anything. just the one note.</p>
+  </div>
+</section>
+
+<footer>
+  <nav aria-label="fuocucina elsewhere">
+    <a href="https://www.youtube.com/@fuocucina" rel="me">the films <span>youtube</span></a>
+    <a href="https://www.instagram.com/fuocucina" rel="me">instagram</a>
+    <a href="https://www.tiktok.com/@fuocucina" rel="me">tiktok</a>
+  </nav>
+  <svg viewBox="0 0 120 120" width="44" height="44" aria-hidden="true" style="display:block;margin:0 auto"><path d="M 70.64 17.31 A 44 44 0 1 1 49.36 17.31" fill="none" stroke="#221E1A" stroke-width="3.5"/><text x="60.5" y="86" text-anchor="middle" font-size="74" style="font-family:'Marcellus',Georgia,serif" fill="#221E1A">f</text><g transform="translate(51.5,1.5) scale(0.17)"><path d="M54 6 C60 26 76 40 75 64 C74 90 60 106 47 106 C31 106 21 90 23 70 C25 52 36 40 44 26 C48 18 51 12 54 6 Z" fill="#B24A26"/></g></svg>
+  <div class="fn">fuocucina · fire-kitchen</div>
+</footer>
+<script>
+(function(){
+  function px(v){ return parseFloat(v)||0; }
+  function align(){
+    try{
+      var wm=document.querySelector('.wm'), ie=wm.querySelector('.ie'), el=ie.querySelector('.fl');
+      var cs=getComputedStyle(wm), size=px(cs.fontSize), ls=px(cs.letterSpacing);
+      var ctx=align._c||(align._c=document.createElement('canvas').getContext('2d'));
+      ctx.font='400 '+size+'px Marcellus, Georgia, serif';
+      var mI=ctx.measureText('ı'), mH=ctx.measureText('Hg');
+      if(mI.actualBoundingBoxAscent===undefined||mH.fontBoundingBoxAscent===undefined) return;
+      var cx=(ie.getBoundingClientRect().width-ls)/2, r=el.getBoundingClientRect();
+      if(!(r.width>0)) return;
+      el.style.transform='none'; el.style.left=(cx-r.width/2)+'px'; el.style.top=(mH.fontBoundingBoxAscent-mI.actualBoundingBoxAscent-size*0.26-r.height)+'px';
+    }catch(e){}
+  }
+  var run=function(){ align(); setTimeout(align,250); };
+  if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(run); } else { run(); }
+  window.addEventListener('load',run); window.addEventListener('resize',align);
+})();
+</script>
+</body>
+</html>
